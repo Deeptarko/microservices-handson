@@ -1,0 +1,40 @@
+package com.deep.employeeservice.service.impl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.deep.employeeservice.entity.Employee;
+import com.deep.employeeservice.repository.EmployeeRepository;
+import com.deep.employeeservice.service.EmployeeService;
+
+@Service
+public class EmployeeServiceImpl implements EmployeeService {
+	
+	@Autowired
+	private EmployeeRepository empRepository;
+
+	@Override
+	public Employee addEmployee(Employee employee) {
+		return empRepository.save(employee);
+	}
+
+	@Override
+	public List<Employee> getAllEmployees() {
+		return empRepository.findAll();
+	}
+
+	@Override
+	public Employee updateEmployeeById(Integer id) {
+		Optional<Employee> emp=empRepository.findById(id);
+		if(emp.isPresent()) {
+			return empRepository.save(emp.get());
+			
+		}else {
+			throw new IllegalArgumentException("Invalid Username");
+		}
+	}
+	
+}

@@ -1,0 +1,5 @@
+package com.deep.employeeservice.service;
+
+public interface EmployeeService {
+
+}

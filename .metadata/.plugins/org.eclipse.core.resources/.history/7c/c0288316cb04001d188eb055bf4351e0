@@ -1,0 +1,5 @@
+package com.deep.userservice.entity;
+
+public class User {
+
+}

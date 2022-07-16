@@ -1,0 +1,17 @@
+spring.datasource.url=jdbc:mysql://localhost:3306/micro_practice_check?useSSL=false&serverTimezone=UTC
+spring.datasource.username=student
+spring.datasource.password=student
+
+#Hibernate Properties
+
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.format_sql=true
+
+#Application Properties
+spring.application.name=USER-SERVICE
+
+#Server Properties
+
+server.port=9002

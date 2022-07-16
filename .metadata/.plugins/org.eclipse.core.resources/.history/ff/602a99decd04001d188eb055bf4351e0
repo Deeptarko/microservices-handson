@@ -1,0 +1,5 @@
+package com.deep.userservice.repository;
+
+public class UserRepository {
+
+}

@@ -1,0 +1,17 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: API-GATEWAY
+    
+  cloud:
+    gateway:
+      routes:
+      - id: USER-SERVICE
+        uri:
+          lb://USER-SERVICE
+        predicates:
+        - Path=/user/**
+      
+
+    

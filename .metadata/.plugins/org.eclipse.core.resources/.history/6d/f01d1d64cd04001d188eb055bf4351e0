@@ -1,0 +1,5 @@
+package com.deep.userservice.service.impl;
+
+public class UserServiceImpl {
+
+}

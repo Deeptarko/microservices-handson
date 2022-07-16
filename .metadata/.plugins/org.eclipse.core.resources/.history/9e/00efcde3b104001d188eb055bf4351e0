@@ -1,0 +1,5 @@
+package com.deep.employeeservice.repository;
+
+public class EmployeeRepository {
+
+}

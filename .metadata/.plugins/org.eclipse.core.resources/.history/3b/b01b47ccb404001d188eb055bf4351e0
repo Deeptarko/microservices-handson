@@ -1,0 +1,5 @@
+package com.deep.employeeservice.entity;
+
+public class Employee {
+
+}

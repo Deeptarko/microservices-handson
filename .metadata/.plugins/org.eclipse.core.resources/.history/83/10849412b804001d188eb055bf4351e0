@@ -1,0 +1,14 @@
+package com.deep.employeeservice.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.deep.employeeservice.entity.Employee;
+
+
+public interface EmployeeService {
+	
+	public Employee addEmployee(Employee employee);
+	public List<Employee> getAllEmployees();
+}
